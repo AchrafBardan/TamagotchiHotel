@@ -65,7 +65,7 @@ class RoomController extends Controller
         // validate input
         $validator = Validator::make($req->all(), [
             'id' => ['required', 'integer'],
-            'type' => ['integer'],
+            'type' => ['string'],
             'size' => ['integer'],
         ]);
 
